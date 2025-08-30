@@ -1,0 +1,213 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage{cmbright}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage[sf]{libertine}
+\usepackage{microtype}
+\usepackage{paracol}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\hypersetup{colorlinks, urlcolor=black, linkcolor=black}
+
+% Geometry
+\geometry{hmargin=1.0cm, vmargin=2.5cm}
+\columnratio{0.6, 0.4}
+\setlength\columnsep{0.05\textwidth}
+\setlength\parindent{0pt}
+\setlength{\smallskipamount}{8pt plus 3pt minus 3pt}
+\setlength{\medskipamount}{10pt plus 6pt minus 6pt}
+\setlength{\bigskipamount}{12pt plus 8pt minus 8pt}
+
+% Style
+\pagestyle{empty}
+\titleformat{\section}{\scshape\LARGE\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{\bigskipamount}{\smallskipamount}
+\newcommand{\heading}[2]{\centering{\sffamily\Huge #1}\\\smallskip{\large{#2}}}
+\newcommand{\entry}[4]{{{\textbf{#1}}} \hfill #3 \\ #2 \hfill #4}
+\newcommand{\tableentry}[3]{\textsc{#1} & #2\expandafter\ifstrequal\expandafter{#3}{}{\\}{\\[6pt]}}
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{Eindhoven, \today}
+
+
+%\vspace*{\fill}
+
+\begin{paracol}{2}
+
+% Name & headline
+\heading{SEN ZHAN}{Electrical Engineering Ph.D. with 5 years' experience in mathematical optimization and electric power system planning, operation, and markets}
+
+\switchcolumn
+
+% Identity card
+\vspace{0.01\textheight}
+\begin{supertabular}{ll}
+  \footnotesize\faEnvelope & \href{mailto:sen.tue@outlook.com}{sen.tue@outlook.com} \\
+    \footnotesize\faPhone & +31-620776064 \\
+  \footnotesize\faLinkedin & \href{https://www.linkedin.com/in/sen-zhan}{linkedin.com/in/sen-zhan} \\
+  \footnotesize\faGithub & \href{https://github.com/senzhanopt}{github.com/senzhanopt}\\
+\end{supertabular}
+
+%\bigskip
+\switchcolumn*
+\section{experience}
+
+\entry{Eindhoven University of Technology}{Postdoc Researcher}{Eindhoven, Netherlands}{2024 -- present}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Deployed optimization algorithms on cloud controlling 9 home batteries, achieving peak shaving in real-world operation
+  \item  Developed a data-driven approach for battery electrochemical and thermal dynamics modeling enabling real-time control
+\end{itemize}
+
+% \medskip
+\vspace{-15pt}
+\entry{}{Ph.D. Researcher}{}{2020 -- 2024}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Designed real-time optimization algorithms for distribution grid congestion management using measurements as feedback
+  \item Collaborated with industrial partners to investigate the heat pump hosting capacity for a social housing company
+  % \item Published 6+ journal papers and 5 conference papers
+  \item Supervised 6 B.Sc./M.Sc. graduation/internship projects
+\end{itemize}
+
+% \medskip
+
+\entry{SEWPG European Innovation Center}{Intern Algorithm Engineer}{Aarhus, Denmark}{2019 -- 2020}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item Developed algorithms for optimal siting and electrical layout of offshore wind farms
+\end{itemize}
+
+
+
+
+
+
+\section{education}
+
+\entry{Eindhoven University of Technology}{Ph.D., Electrical Engineering}{Eindhoven, Netherlands}{2020 -- 2024}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item \href{https://research.tue.nl/en/publications/integrating-offline-and-online-feedback-optimization-for-distribu}{Dissertation: Integrating offline and online feedback optimization for distribution system management}
+  % \item Supervisors: prof.dr.ir. Han Slootweg, dr.ir. Johan Morren, ir. Wouter van den Akker. ir. Anne van der Molen
+\end{itemize}
+
+% \medskip
+
+\entry{Technical University of Denmark}{M.Sc., Sustainable Energy}{Lyngby, Denmark}{2018 -- 2020}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+  \item \href{https://doi.org/10.1016/j.ijepes.2021.107417}{Thesis: Distributionally robust chance-constrained flexibility planning for integrated energy system}
+  % \item Supervisors: dr. Guangya Yang, dr. Peng Hou
+\end{itemize}
+
+% \medskip
+
+\entry{Zhejiang University}{B.Eng., Energy \& Environment Systems Engineering}{Hangzhou, China}{2014 -- 2018}
+
+
+\section{selected publications}
+\begin{enumerate}
+    \item \textbf{S. Zhan}, N. G. Paterakis, W. van den Akker, A. van der Molen, J. Morren, and J. G. Slootweg, “Distributed online feedback optimization for real-time distribution system voltage regulation,” IEEE Trans. Power Syst., 2025.
+    \item \textbf{S. Zhan}, J. Morren, W. van den Akker, A. van der Molen, N. G. Paterakis, and J. G. Slootweg, “Robustness assessment of primal-dual gradient projection-based online feedback optimization for real-time distribution grid management,” Electr. Power Syst. Res., vol. 242,  2025.
+    \item \textbf{S. Zhan}, J. Morren, W. van den Akker, A. van der Molen, N. G. Paterakis, and J. G. Slootweg, “Fairness-Incorporated online feedback optimization for real-time distribution grid management,” IEEE Trans. Smart Grid, vol. 15, no. 2, pp. 1792-1806, 2024.
+      \item \textbf{S. Zhan}, J. Morren, W. van den Akker, A. van der Molen, N. G. Paterakis, and J. G. Slootweg, “Multi-timescale coordinated distributed energy resource control combining local and online feedback optimization,” Electr. Power Syst. Res., vol. 234, 2024.
+      \item H. Zhang, \textbf{S. Zhan}, K. Kok, and N. G. Paterakis, “Establishing a hierarchical local market structure using multi-cut Benders decomposition,” Appl. Energy, vol. 363, 2024.
+\end{enumerate}
+
+\raggedright
+A full list of publications is available at \href{https://scholar.google.com/citations?user=1RB8BJ4AAAAJ}{https://scholar.google.com/citations?user=1RB8BJ4AAAAJ} 
+
+\switchcolumn
+
+\section{skills}
+\begin{supertabular}{rl}
+    \tableentry{\footnotesize\faKeyboard}{Optimization \textperiodcentered{} Decomposition }{}
+      \tableentry{}{ Stochastic Programming }{}
+      \tableentry{}{Data Analytics \textperiodcentered{}  Machine Learning}{}
+      \tableentry{}{ Risk Management \textperiodcentered{} Power Flow}{} 
+        
+  \tableentry{\footnotesize\faCode}{Python \textperiodcentered{} Julia \textperiodcentered{} Matlab
+  \textperiodcentered{} Git}{}
+  \tableentry{}{Latex \textperiodcentered{} CI/CD \textperiodcentered{} PythonAnywhere}{}
+
+  \tableentry{\footnotesize\faBook}
+  { Gurobipy \textperiodcentered{} cvxpy\textperiodcentered{} JuMP \textperiodcentered{} YALMIP }{}
+ \tableentry{}{ Scikit-learn \textperiodcentered{} Pandas \textperiodcentered{}  Numpy}{} 
+ \tableentry{}{Matplotlib \textperiodcentered{} PyBaMM } {}
+   \tableentry{}{ Pandapower \textperiodcentered{} power-grid-model }{} 
+  
+
+
+
+  \tableentry{\footnotesize\faLanguage}{English \textperiodcentered{} proficient}{}
+  \tableentry{}{Dutch \textperiodcentered{} elementary (A2)}{}
+    \tableentry{}{Mandarin \textperiodcentered{} native}{}
+
+\tableentry{\footnotesize\faCar}{Driver's license B }{}
+
+\tableentry{\footnotesize\faFile}{Valid Dutch work permit }{}
+
+\end{supertabular}
+
+
+\section{projects}
+\raggedright\textit{No-Gizmos: Grid Optimization for Large-Scale Integration of Solar and Wind Power Using Storage and Software (2024 - present, with TU/e)}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+ \item Dutch consortium project targeting renewable integration via battery control
+ \item Contributed to development and deployment of control algorithms for residential batteries with academic and industrial partners
+\end{itemize}
+
+\raggedright\textit{Grid Edge Control (2020 - 2024, with TU/e)}
+\begin{itemize}[noitemsep,leftmargin=3.5mm,rightmargin=0mm,topsep=6pt]
+\item Dutch consortium project on distributed optimization for grid applications
+\item Developed feedback-based methods in collaboration with DSOs
+\end{itemize}
+
+
+\newpage
+\section{presentations}
+\begin{supertabular}{rl}
+  \tableentry{2024}{Power Systems Computation}{}
+  \tableentry{}{Conference (PSCC), Paris}{}
+  \tableentry{2023}{4th Power Grid Model Meet-up,}{}
+  \tableentry{}{ Enexis, Den Bosch}{}
+  \tableentry{2023}{IEEE Powertech, Belgrade}{}
+  \tableentry{2022}{IET APSCOM, Hong Kong}{}
+  \tableentry{2022}{IEEE SEST, Eindhoven}{}
+\end{supertabular}
+
+%\bigskip
+
+\section{awards}
+\begin{supertabular}{rl}
+  \tableentry{2025}{\textbf{Best student paper award}}{}
+  \tableentry{}{IEEE Euro. Energy Market Conf.}{spaceafter}
+  \tableentry{2022}{\textbf{Best student paper award}}{}
+  \tableentry{}{IET APSCOM Hong Kong}{spaceafter}
+\end{supertabular}
+
+
+
+
+
+
+\section{professional service}
+Peer reviewer for top IEEE Transactions and Elsevier journals in power system optimization and operation
+
+
+
+\section{reference}
+
+Available upon request 
+
+
+
+\end{paracol}
+
+%\vspace*{\fill}
+
+\end{document}
